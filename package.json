@@ -1,0 +1,37 @@
+{
+    "name": "storyline",
+    "version": "1.0.0",
+    "description": "A minimal Electron application written with Typescript",
+    "main": "dist/main.js",
+    "scripts": {
+        "build": "tsc",
+        "watch": "tsc -w",
+        "lint": "eslint -c .eslintrc --ext .ts ./src",
+        "start": "npm run build && electron ./dist/main.js",
+        "package": "electron-packager ./  --platform=win32 --out ./build --icon=Icon.ico"
+    },
+    "repository": "https://github.com/electron/electron-quick-start-typescript",
+    "keywords": [
+        "Electron",
+        "quick",
+        "start",
+        "tutorial",
+        "demo",
+        "typescript"
+    ],
+    "author": "GitHub",
+    "license": "CC0-1.0",
+    "devDependencies": {
+        "@types/sortablejs": "^1.10.6",
+        "@typescript-eslint/eslint-plugin": "^3.4.0",
+        "@typescript-eslint/parser": "^3.4.0",
+        "electron-packager": "^15.2.0",
+        "eslint": "^7.3.1",
+        "typescript": "^3.9.5"
+    },
+    "dependencies": {
+        "electron": "^12.0.7",
+        "font-list": "^1.2.14",
+        "sortablejs": "^1.13.0"
+    }
+}

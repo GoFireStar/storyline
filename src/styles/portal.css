@@ -1,0 +1,259 @@
+*:focus {
+    outline: none
+}
+
+.nav-view {
+    min-height: 280px;
+    max-width: 420px;
+    display: flex;
+    /* box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1); */
+    /* background-color: rgba(200, 200, 200, 0.5); */
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(8px);
+    transform: translateZ(0);
+}
+
+.nav-sec-view {
+    flex: 40%;
+    /* background-color: #f8f9fa; */
+    height: inherit;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 44px;
+}
+
+.nav-cha-view {
+    flex: 60%;
+    height: inherit;
+    overflow: auto;
+    /* background-color: #f5f6f7; */
+    padding-top: 44px;
+}
+
+.item {
+    user-select: none;
+}
+
+.title {
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+
+.nav-sec-view .item {
+    padding: 10px;
+    border-left: 4px solid #09f;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.nav-cha-view .item:hover {
+    background: rgba(175, 175, 175, 0.4);
+}
+
+.page_info span {
+    padding-right: 20px;
+}
+
+.nav-cha-view .item {
+    padding: 10px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.nav-sec-view .item:hover {
+    background: rgba(175, 175, 175, 0.4);
+}
+
+.info {
+    font-size: 13px;
+    opacity: 0.85;
+    text-indent: 0.5em;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.item .info {
+    overflow: hidden;
+    max-height: 34px;
+}
+
+.main-view {
+    display: flex;
+    height: 100%;
+}
+
+.tool-view {
+    height: 44px;
+    display: flex;
+    position: fixed;
+    justify-items: center;
+    width: 100%;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(8px);
+    /* box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1); */
+    transform: translateZ(0);
+    align-items: center;
+    z-index: 100;
+    border-bottom: 1px solid rgba(175, 175, 175, 0.4);
+}
+
+.cha-view {
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+.cha-view-flex {
+    justify-content: center;
+    display: flex;
+}
+
+.page-view {
+    background: #fff;
+    margin: 10px;
+    min-width: 500px;
+    width: 800px;
+    max-width: 900px;
+    padding: 40px;
+    border: 2px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    transition: width 1s;
+    -webkit-overflow-scrolling: auto;
+}
+
+.more-view {
+    min-width: 300px;
+    width: 320px;
+    max-width: 400px;
+    /* background-color: #f1f2f3;
+    background-color: rgba(200, 200, 200, 0.5); */
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(8px);
+    transform: translateZ(0);
+    padding: 10px;
+    overflow: auto;
+    transition: width 1s;
+}
+
+.more-view .title {
+    line-height: 2;
+}
+
+.page_title {
+    font-size: 20px;
+    text-align: center;
+    line-height: 2;
+}
+
+.page_info {
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+    opacity: 0.7;
+}
+
+#page_info {
+    font-size: 14px;
+    line-height: 2;
+    text-indent: 2em;
+    min-height: 100px;
+}
+
+.page_context {
+    font-size: 18px;
+    min-height: 800px;
+}
+
+.page_context p {
+    text-indent: 2em;
+    font-size: inherit;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    line-height: 2;
+}
+
+.more-info {
+    min-height: 100px;
+}
+
+.page_path {
+    line-height: 44px;
+}
+
+.name {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 2;
+    padding-right: 20px;
+}
+
+.more-tabs-view {
+    padding-top: 10px;
+}
+
+.add-error-view {}
+
+.more-tabs-view>div {}
+
+.more-tool {
+    padding-bottom: 10px;
+}
+
+.more-view .title {
+    padding-top: 5px;
+    padding-bottom: 0;
+    line-height: 1;
+}
+
+.image-button {
+    height: 32px;
+    width: 51px;
+    overflow: hidden;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: background-color 1s;
+}
+
+.image-button:hover {
+    background-color: rgba(175, 175, 175, 0.4);
+}
+
+.more-tool-errors {
+    font-size: 13px;
+}
+
+.error {
+    height: 32px;
+}
+
+.more-tool-errors span {
+    background-color: rgba(175, 175, 175, 0.1);
+    border-radius: 10px;
+    padding: 3px 10px;
+    border: 1px solid rgba(175, 175, 175, 0.3);
+}
+
+.more-tool-errors .t {
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+.more-tool-errors .f {
+    background-color: rgba(0, 255, 0, 0.1);
+}
+
+.mark {
+    padding-top: 10px;
+    border-bottom: 1px solid rgba(175, 175, 175, 0.4);
+}
+
+.mark .title {
+    padding-bottom: 5px;
+}
+
+.mark .info {
+    min-height: 20px;
+    padding-bottom: 5px;
+}
