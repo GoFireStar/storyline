@@ -22,6 +22,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm run build --if-present
-    - run: npm package
+    - run: npm run package
     # The type of runner that the job will run ona
     # The type of runner that the job will run on
